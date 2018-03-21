@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " F ",
+        " S ",
+        " S "
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+        "item": "tm:fragment_obsidian"
+    },
+    
+        "S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+
+    "result":
+    {
+        "item": "tm:shovel_obsidian"
+    }
+}

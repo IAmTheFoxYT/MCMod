@@ -1,0 +1,41 @@
+itemGroup.themodtab=The Mod
+
+container.obsidian_presser=Obsidian Presser
+
+item.fragment_obsidian.name=Obsidian Fragment
+item.diamond_red.name=Red Diamond
+item.brain.name=Brain
+item.cooked_brain.name=Cooked Brain
+item.strawberries.name=Strawberries
+item.strawberry_seeds.name=Strawberry Seeds
+item.mold_iron.name=Iron Mold
+item.liquid_obsidian.name=Liquid Obsidian
+
+entity.crawler.name=Crawler
+
+item.shovel_obsidian.name=Obsidian Shovel
+item.pickaxe_obsidian.name=Obsidian Pickaxe
+item.sword_obsidian.name=Obsidian Sword
+item.hoe_obsidian.name=Obsidian Hoe
+item.axe_obsidian.name=Obsidian Axe
+item.shovel_red.name=Red Diamond Shovel
+item.pickaxe_red.name=Red Diamond Pickaxe
+item.sword_red.name=Red Diamond Sword
+item.hoe_red.name=Red Diamond Hoe
+item.axe_red.name=Red Diamond Axe
+
+item.helmet_obsidian.name=Obsidian Helmet
+item.chestplate_obsidian.name=Obsidian Chestplate
+item.leggings_obsidian.name=Obsidian Leggings
+item.boots_obsidian.name=Obsidian Boots
+item.helmet_red.name=Red Diamond Helmet
+item.chestplate_red.name=Red Diamond Chestplate
+item.leggings_red.name=Red Diamond Leggings
+item.boots_red.name=Red Diamond Boots
+
+tile.block_flint.name=Block Of Flint
+tile.block_ore_red.name=Red Diamond Ore
+tile.block_red.name=Red Diamond Block
+tile.obsidian_presser.name=Obsidian Presser
+tile.strawberry_plant.name=Strawberry Plant
+tile.bush.name=Bush

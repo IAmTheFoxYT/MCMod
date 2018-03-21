@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "FFF",
+        "FFF",
+        "FFF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+        "item": "minecraft:flint"
+    }
+    },
+
+    "result":
+    {
+        "item": "tm:block_flint"
+    }
+}

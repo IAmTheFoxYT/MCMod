@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": 
+    {
+        "item": "tm:brain"
+    },
+    "result": "tm:cooked_brain",
+    "experience": 0.3,
+    "cookingtime": 200
+}
+     
+    

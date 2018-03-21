@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "F F",
+        "FFF",
+        "FFF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+        "item": "tm:diamond_red"
+    }
+    },
+
+    "result":
+    {
+        "item": "tm:chestplate_red"
+    }
+}

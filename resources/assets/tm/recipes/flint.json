@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "F"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+        "item": "tm:block_flint"
+    }
+    },
+
+    "result":
+    {
+        "item": "minecraft:flint",
+        "count": 9
+    }
+}

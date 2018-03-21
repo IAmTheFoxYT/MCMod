@@ -1,0 +1,13 @@
+{
+    "parent": "block/orientable",
+    "textures":
+    {
+        "particle": "tm:blocks/obsidian_presser_front_off",
+        "up": "tm:blocks/obsidian_presser_top",
+        "down": "tm:blocks/obsidian_presser_top",
+        "north": "tm:blocks/obsidian_presser_front_off",
+        "east": "tm:blocks/obsidian_presser_side1",
+        "south": "tm:blocks/obsidian_presser_side3",
+        "west": "tm:blocks/obsidian_presser_side2"
+    }
+}

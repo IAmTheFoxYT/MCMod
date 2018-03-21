@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "O"
+    ],
+    
+    "key":
+    {
+        "O":
+        {
+        "item": "minecraft:obsidian"
+    }
+    },
+
+    "result":
+    {
+        "item": "tm:fragment_obsidian",
+        "count": 9
+    }
+}

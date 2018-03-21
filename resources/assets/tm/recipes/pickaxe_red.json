@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "FFF",
+        " S ",
+        " S "
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+        "item": "tm:diamond_red"
+    },
+    
+        "S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+
+    "result":
+    {
+        "item": "tm:pickaxe_red"
+    }
+}
