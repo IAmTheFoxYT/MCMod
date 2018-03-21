@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "F"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+        "item": "tm:block_red"
+    }
+    },
+
+    "result":
+    {
+        "item": "tm:diamond_red",
+        "count": 9
+    }
+}
