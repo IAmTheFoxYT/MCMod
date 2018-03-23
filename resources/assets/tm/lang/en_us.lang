@@ -10,6 +10,7 @@ item.strawberries.name=Strawberries
 item.strawberry_seeds.name=Strawberry Seeds
 item.mold_iron.name=Iron Mold
 item.liquid_obsidian.name=Liquid Obsidian
+item.uranium.name=Uranium
 
 entity.crawler.name=Crawler
 
@@ -39,3 +40,4 @@ tile.block_red.name=Red Diamond Block
 tile.obsidian_presser.name=Obsidian Presser
 tile.strawberry_plant.name=Strawberry Plant
 tile.bush.name=Bush
+tile.ore_uran.name=Uranium Ore
