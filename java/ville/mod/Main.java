@@ -35,7 +35,7 @@ public class Main
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {RegistryHandler.preInitRegistries();}
 	@EventHandler
-	public void init(FMLInitializationEvent event) {RegistryHandler.initRegistries(); GameRegistry.addSmelting(new ItemStack(ItemInit.BRAIN, 1), new ItemStack(ItemInit.COOKED_BRAIN, 1), 10);GameRegistry.addSmelting(new ItemStack(BlockInit.BLOCK_ORE_RED, 1), new ItemStack(ItemInit.DIAMOND_RED, 1), 10);}
+	public void init(FMLInitializationEvent event) {RegistryHandler.initRegistries(); GameRegistry.addSmelting(new ItemStack(ItemInit.BRAIN, 1), new ItemStack(ItemInit.COOKED_BRAIN, 1), 10);GameRegistry.addSmelting(new ItemStack(BlockInit.BLOCK_ORE_RED, 1), new ItemStack(ItemInit.DIAMOND_RED, 1), 10);GameRegistry.addSmelting(new ItemStack(BlockInit.ORE_URAN, 1), new ItemStack(ItemInit.URANIUM, 1), 10);}
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {}
 }

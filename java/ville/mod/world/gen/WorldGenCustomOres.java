@@ -16,10 +16,12 @@ import ville.mod.init.BlockInit;
 public class WorldGenCustomOres implements IWorldGenerator 
 {
 	private WorldGenerator block_ore_red;
+	private WorldGenerator ore_uran;
 	
 	public WorldGenCustomOres() 
 	{
 		block_ore_red = new WorldGenMinable(BlockInit.BLOCK_ORE_RED.getDefaultState(), 8, BlockMatcher.forBlock(Blocks.STONE));
+		ore_uran = new WorldGenMinable(BlockInit.ORE_URAN.getDefaultState(), 8, BlockMatcher.forBlock(Blocks.STONE));
 	}
 	
 	@Override
@@ -30,6 +32,7 @@ public class WorldGenCustomOres implements IWorldGenerator
 		case 0:
 			
 			runGenerator(block_ore_red, world, random, chunkX, chunkZ, 1, 0, 15);
+			runGenerator(ore_uran, world, random, chunkX, chunkZ, 1, 0, 25);
 		}
 	}
 	

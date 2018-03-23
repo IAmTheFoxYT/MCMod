@@ -7,25 +7,29 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
+import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.util.DamageSource;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import ville.mod.Main;
 import ville.mod.init.BlockInit;
 import ville.mod.init.ItemInit;
 import ville.mod.util.interfaces.IHasModel;
 
-public class BlockBase extends Block implements IHasModel 
+public class OreUran extends Block implements IHasModel 
 {
-	public BlockBase(String name, Material material) 
+	public OreUran(String name, Material material) 
 	{
 		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(Main.themodtab);
-		setHarvestLevel("pickaxe", 4);
+		setHarvestLevel("pickaxe", 5);
 		setSoundType(SoundType.STONE);
-		setResistance(16);
+		setResistance(20);
+		setLightLevel(12);
 		
 		
 		BlockInit.BLOCKS.add(this);
@@ -44,7 +48,7 @@ public class BlockBase extends Block implements IHasModel
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) 
 	{
-		return ville.mod.init.ItemInit.DIAMOND_RED;
+		return ville.mod.init.ItemInit.URANIUM;
 	}
-
+	
 }

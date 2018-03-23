@@ -1,5 +1,6 @@
 package ville.mod.objects.blocks;
 
+import java.util.List;
 import java.util.Random;
 
 import javax.annotation.Nullable;
@@ -11,6 +12,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
@@ -21,7 +23,7 @@ import ville.mod.init.BlockInit;
 import ville.mod.init.ItemInit;
 import ville.mod.util.interfaces.IHasModel;
 
-public class BlockBush extends net.minecraft.block.BlockBush implements IHasModel 
+public class BlockBush extends net.minecraft.block.BlockBush implements IHasModel, net.minecraftforge.common.IShearable
 {
 	
 	protected static final AxisAlignedBB BUSH_AABB = new AxisAlignedBB(0.125D, 0.0D, 0.125D, 0.875D, 1.0D, 0.875D);
@@ -85,6 +87,22 @@ public class BlockBush extends net.minecraft.block.BlockBush implements IHasMode
 	    {
 	        return NULL_AABB;
 	    }
+
+
+
+	@Override
+	public boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) 
+	{
+		return true;
+	}
+
+
+
+	@Override
+	public List<ItemStack> onSheared(ItemStack item, IBlockAccess world, BlockPos pos, int fortune) 
+	{
+		return java.util.Arrays.asList(new ItemStack(BlockInit.BUSH));
+	}
 	 
 
 }

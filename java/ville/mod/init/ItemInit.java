@@ -37,6 +37,7 @@ public class ItemInit
 	public static final Item DIAMOND_RED = new ItemBase("diamond_red");
 	public static final Item MOLD_IRON = new ItemBase("mold_iron");
 	public static final Item LIQUID_OBSIDIAN = new ItemBase("liquid_obsidian");
+	public static final Item URANIUM = new ItemBase("uranium");
 	
 	
 	//Tools

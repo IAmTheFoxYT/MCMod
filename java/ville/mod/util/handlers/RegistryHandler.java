@@ -20,7 +20,6 @@ import ville.mod.init.ItemInit;
 import ville.mod.util.Reference;
 import ville.mod.util.interfaces.IHasModel;
 import ville.mod.world.gen.WorldGenCustomOres;
-import ville.mod.world.gen.WorldGenCustomStructures;
 
 @EventBusSubscriber
 public class RegistryHandler 
@@ -63,7 +62,6 @@ public class RegistryHandler
 	{
 		EntityInit.registerEntities();
 		RenderHandler.registerEntityRenders();
-		GameRegistry.registerWorldGenerator(new WorldGenCustomStructures(), 0);
 	}
 	
 	public static void initRegistries() 
@@ -75,9 +73,6 @@ public class RegistryHandler
 	public static void otherRegistries() 
 	{
 		GameRegistry.registerWorldGenerator(new WorldGenCustomOres(), 0);
-		GameRegistry.registerWorldGenerator(new WorldGenCustomStructures(), 0);
-		EntityRegistry.registerModEntity(null, EntityCrawler.class, "crawler", 120, Reference.NAME, 40, 3, true);
-		EntityRegistry.addSpawn("crawler", 300, 2, 6, EnumCreatureType.MONSTER, Biomes.PLAINS, Biomes.BIRCH_FOREST, Biomes.BIRCH_FOREST_HILLS, Biomes.DESERT, Biomes.DESERT_HILLS, Biomes.DESERT_HILLS, Biomes.EXTREME_HILLS_EDGE, Biomes.EXTREME_HILLS_WITH_TREES, Biomes.FOREST, Biomes.FOREST_HILLS, Biomes.MESA, Biomes.MESA_CLEAR_ROCK, Biomes.MESA_ROCK, Biomes.MUTATED_BIRCH_FOREST, Biomes.MUTATED_BIRCH_FOREST_HILLS, Biomes.MUTATED_DESERT, Biomes.MUTATED_EXTREME_HILLS, Biomes.MUTATED_EXTREME_HILLS_WITH_TREES, Biomes.MUTATED_FOREST, Biomes.MUTATED_MESA, Biomes.MUTATED_MESA_CLEAR_ROCK, Biomes.MUTATED_MESA_ROCK, Biomes.MUTATED_PLAINS, Biomes.MUTATED_ROOFED_FOREST, Biomes.ROOFED_FOREST, Biomes.STONE_BEACH);
-		
+		EntityRegistry.registerModEntity(null, EntityCrawler.class, "crawler", 120, Reference.NAME, 40, 3, true);		
 	}
 }
