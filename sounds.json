@@ -1,0 +1,22 @@
+{
+    "entity.crawler.ambient": 
+    {
+        "category": "entity",
+        "subtitle": "entity.crawler.ambient",
+        "sounds": [{ "name": "tm:entity/crawler/ambient", "stream": true}]
+    },
+    
+    "entity.crawler.hurt": 
+    {
+        "category": "entity",
+        "subtitle": "entity.crawler.hurt",
+        "sounds": [{ "name": "tm:entity/crawler/hurt", "stream": true}]
+    },
+    
+    "entity.crawler.death": 
+    {
+        "category": "entity",
+        "subtitle": "entity.crawler.death",
+        "sounds": [{ "name": "tm:entity/crawler/death", "stream": true}]
+    }
+}
