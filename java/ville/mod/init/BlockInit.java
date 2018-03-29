@@ -8,8 +8,11 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import ville.mod.objects.blocks.BlockBase;
 import ville.mod.objects.blocks.BlockBush;
+import ville.mod.objects.blocks.BlockGas;
 import ville.mod.objects.blocks.BlockNuke;
+import ville.mod.objects.blocks.BlockRadioStone;
 import ville.mod.objects.blocks.BlockStrawberryPlant;
+import ville.mod.objects.blocks.BlockTeleporter;
 import ville.mod.objects.blocks.FlintBase;
 import ville.mod.objects.blocks.OreUran;
 import ville.mod.objects.blocks.RedBlockBase;
@@ -30,6 +33,9 @@ public class BlockInit
 	
 	public static final Block ORE_URAN = new OreUran("ore_uran", Material.ROCK).setHardness(10F);
 	public static final Block NUKE = new BlockNuke("nuke", Material.TNT);
+	public static final Block RADIOACTIVE_GAS = new BlockGas("radioactive_gas", Material.CLAY);
+	public static final Block RADIOACTIVE_STONE = new BlockRadioStone("radioactive_stone", Material.ROCK);
+	public static final Block TELEPORTER = new BlockTeleporter("teleporter");
 	
 	
 }

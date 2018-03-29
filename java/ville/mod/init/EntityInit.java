@@ -11,6 +11,7 @@ import net.minecraftforge.common.BiomeDictionary.Type;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 import ville.mod.Main;
 import ville.mod.entity.EntityCrawler;
+import ville.mod.entity.item.EntityNukePrimed;
 import ville.mod.util.Reference;
 
 public class EntityInit 
@@ -18,6 +19,7 @@ public class EntityInit
 	public static void registerEntities() 
 	{
 		registerEntity("crawler", EntityCrawler.class, Reference.ENTITY_CRAWLER, 50, 12430982, 12443270);
+		registerEntity("nukeprimed", EntityNukePrimed.class, Reference.ENTITY_NUKE_PRIMED, 0, 0, 0);
 		 
 		}
 	
