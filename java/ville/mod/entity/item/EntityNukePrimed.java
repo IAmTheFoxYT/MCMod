@@ -1,5 +1,7 @@
 package ville.mod.entity.item;
 
+import javax.annotation.Nullable;
+
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.nbt.NBTTagCompound;
@@ -7,12 +9,15 @@ import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
+import ville.mod.util.Reference;
 
 public class EntityNukePrimed extends Entity
 {
-    private static final DataParameter<Integer> FUSE = EntityDataManager.<Integer>createKey(EntityNukePrimed.class, DataSerializers.VARINT);
-    private EntityLivingBase nukePlacedBy;
+	private static final DataParameter<Integer> FUSE = EntityDataManager.<Integer>createKey(EntityNukePrimed.class, DataSerializers.VARINT);
+    @Nullable
+	private EntityLivingBase nukePlacedBy;
 
     /** How long the fuse is */
     private int fuse;
@@ -97,18 +102,18 @@ public class EntityNukePrimed extends Entity
         else
         {
             this.handleWaterMovement();
-            this.world.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, this.posX, this.posY + 0.5D, this.posZ, 0.0D, 0.0D, 0.0D, new int[0]);
+            this.world.spawnParticle(EnumParticleTypes.SMOKE_LARGE, this.posX, this.posY + 0.5D, this.posZ, 0.0D, 0.0D, 0.0D, new int[0]);
         }
     }
 
-    private void moveEntity(double motionX, double motionY, double motionZ) 
+    private void moveEntity(double motionX, double motionY, double motionZ)
     {
 		
 	}
 
 	private void explode()
     {
-        float f = 4.0F;
+        float f = 100.0F;
         this.world.createExplosion(this, this.posX, this.posY + (double)(this.height / 16.0F), this.posZ, f, true);
     }
 
