@@ -9,6 +9,7 @@ public class Reference
 	public static final String COMMON = "ville.mod.proxy.CommonProxy";
 	
 	public static final int ENTITY_CRAWLER = 120;
+	public static final int ENTITY_NUKE_PRIMED = 121;
 	
 	public static final int GUI_OBSIDIAN_PRESSER = 0;
 
