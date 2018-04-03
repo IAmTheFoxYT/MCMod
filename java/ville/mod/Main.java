@@ -11,6 +11,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import ville.mod.entity.EntityCrawler;
@@ -38,4 +39,6 @@ public class Main
 	public void init(FMLInitializationEvent event) {RegistryHandler.initRegistries(); GameRegistry.addSmelting(new ItemStack(ItemInit.BRAIN, 1), new ItemStack(ItemInit.COOKED_BRAIN, 1), 10);GameRegistry.addSmelting(new ItemStack(BlockInit.BLOCK_ORE_RED, 1), new ItemStack(ItemInit.DIAMOND_RED, 1), 10);GameRegistry.addSmelting(new ItemStack(BlockInit.ORE_URAN, 1), new ItemStack(ItemInit.URANIUM, 1), 10);}
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {}
+	@EventHandler
+	public void serverInit(FMLServerStartingEvent event) {RegistryHandler.serverRegistries(event);}
 }

@@ -1,8 +1,10 @@
 package ville.mod.world.biomes;
 
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biome.BiomeProperties;
 
-public class BiomeUranium extends Biome {
+public class BiomeUranium extends Biome 
+{
 
 	public BiomeUranium() 
 	{

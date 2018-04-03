@@ -13,15 +13,15 @@ import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
 import ville.mod.init.BlockInit;
 
-public class WorldGenCustomOres implements IWorldGenerator 
+public class WorldGenCustomOres2 implements IWorldGenerator 
 {
-	private WorldGenerator block_ore_red;
-	private WorldGenerator ore_uran;
+	private WorldGenerator ore_lead;
+	private WorldGenerator ore_tungsten;
 	
-	public WorldGenCustomOres() 
+	public WorldGenCustomOres2() 
 	{
-		block_ore_red = new WorldGenMinable(BlockInit.BLOCK_ORE_RED.getDefaultState(), 8, BlockMatcher.forBlock(Blocks.STONE));
-		ore_uran = new WorldGenMinable(BlockInit.ORE_URAN.getDefaultState(), 8, BlockMatcher.forBlock(Blocks.STONE));
+		ore_lead = new WorldGenMinable(BlockInit.ORE_LEAD.getDefaultState(), 9, BlockMatcher.forBlock(Blocks.STONE));
+		ore_tungsten = new WorldGenMinable(BlockInit.ORE_TUNGSTEN.getDefaultState(), 9, BlockMatcher.forBlock(Blocks.STONE));
 	}
 	
 	@Override
@@ -31,8 +31,8 @@ public class WorldGenCustomOres implements IWorldGenerator
 		{
 		case 0:
 			
-			runGenerator(block_ore_red, world, random, chunkX, chunkZ, 1, 0, 15);
-			runGenerator(ore_uran, world, random, chunkX, chunkZ, 1, 0, 25);
+			runGenerator(ore_lead, world, random, chunkX, chunkZ, 60, 0, 120);
+			runGenerator(ore_tungsten, world, random, chunkX, chunkZ, 50, 0, 120);
 		}
 	}
 	

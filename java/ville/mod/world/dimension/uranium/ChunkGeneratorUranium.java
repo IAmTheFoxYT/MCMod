@@ -32,6 +32,8 @@ import net.minecraftforge.event.terraingen.TerrainGen;
 import net.minecraftforge.fml.common.eventhandler.Event;
 import ville.mod.init.BiomeInit;
 import ville.mod.init.BlockInit;
+import ville.mod.world.gen.WorldGenCustomStructures;
+import ville.mod.world.gen.WorldGenStructure;
 
 public class ChunkGeneratorUranium implements IChunkGenerator
 {
@@ -39,10 +41,10 @@ public class ChunkGeneratorUranium implements IChunkGenerator
     protected static final IBlockState BEDROCK = Blocks.BEDROCK.getDefaultState();
     
     //Block that is usually Netherrack
-    protected static final IBlockState MAIN_BLOCK = Blocks.STONE.getDefaultState();
-    //Block that is usally Lava
+    protected static final IBlockState MAIN_BLOCK = BlockInit.RADIOACTIVE_STONE.getDefaultState();
+    //Block that is usually Lava
     protected static final IBlockState YOUR_LIQUID = Blocks.WATER.getDefaultState();
-    //Blocks that are usally gravel and soul sand
+    //Blocks that are usually gravel and soul sand
     protected static final IBlockState OTHER_BLOCK1 = BlockInit.BLOCK_FLINT.getDefaultState();
     protected static final IBlockState OTHER_BLOCK2 = BlockInit.ORE_URAN.getDefaultState();
     
