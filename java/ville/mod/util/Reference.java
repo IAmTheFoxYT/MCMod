@@ -3,8 +3,8 @@ package ville.mod.util;
 public class Reference 
 {
 	public static final String MODID = "tm";
-	public static final String NAME = "The Mod";
-	public static final String VERSION = "Beta";
+	public static final String NAME = "Extreme Extensions";
+	public static final String VERSION = "Early Access";
 	public static final String CLIENT = "ville.mod.proxy.ClientProxy";
 	public static final String COMMON = "ville.mod.proxy.CommonProxy";
 	

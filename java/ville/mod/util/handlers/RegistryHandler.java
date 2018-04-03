@@ -27,14 +27,13 @@ import ville.mod.init.ItemInit;
 import ville.mod.util.Reference;
 import ville.mod.util.interfaces.IHasModel;
 import ville.mod.world.gen.WorldGenCustomOres;
+import ville.mod.world.gen.WorldGenCustomOres2;
+import ville.mod.world.gen.WorldGenCustomStructures;
 
 @EventBusSubscriber
 public class RegistryHandler 
 {
-	private static Biome [] getBiomes (final BiomeDictionary.Type type) 
-	{
-	    return BiomeDictionary.getBiomes (type).toArray (new Biome [0]);
-	}
+	
 
 	
 	@SubscribeEvent
@@ -76,6 +75,8 @@ public class RegistryHandler
 		EntityInit.registerEntities();
 		RenderHandler.registerEntityRenders();
 		GameRegistry.registerWorldGenerator(new WorldGenCustomOres(), 0);
+		GameRegistry.registerWorldGenerator(new WorldGenCustomOres2(), 0);
+		GameRegistry.registerWorldGenerator(new WorldGenCustomStructures(), 0);
 		
 		DimensionInit.registerDimensions();
 		BiomeInit.registerBiomes();
@@ -91,8 +92,7 @@ public class RegistryHandler
 	{
 		
 		EntityRegistry.registerModEntity(null, EntityCrawler.class, "crawler", 120, Reference.NAME, 40, 3, true);
-		EntityRegistry.addSpawn(EntityCrawler.class, 100, 1, 10, EnumCreatureType.MONSTER, getBiomes(BiomeDictionary.Type.PLAINS));
-		EntityRegistry.registerModEntity(null, EntityNukePrimed.class, "nuke_primed", 121, Reference.NAME, 100, 1, true);
+		EntityRegistry.registerModEntity(null, EntityNukePrimed.class, "nukeprimed", 121, Reference.NAME, 80, 3, true);
 	}
 	
 	public static void serverRegistries(FMLServerStartingEvent event) 
