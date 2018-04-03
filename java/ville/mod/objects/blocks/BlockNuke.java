@@ -44,6 +44,8 @@ public class BlockNuke extends Block implements IHasModel
 		setRegistryName(name);
 		setCreativeTab(Main.themodtab);
 		setSoundType(SoundType.ANVIL);
+		setHardness(15);
+		setHarvestLevel("pickaxe", 1);
 		
 		
 		BlockInit.BLOCKS.add(this);
