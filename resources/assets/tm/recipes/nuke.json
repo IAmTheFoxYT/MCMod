@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "TPT",
+        "PUP",
+        "TPT"
+    ],
+
+    "key": {
+        "T": { "item": "minecraft:tnt" },
+        "P": { "item": "tm:nuke_side_plates" },
+        "U": { "item": "tm:uranium" }
+    },
+
+    "result":  {
+        "item": "tm:nuke"
+    }
+}

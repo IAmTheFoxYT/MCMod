@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "FSF",
+        "SFS",
+        "FSF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+        "item": "tm:tungsten"
+    },
+    
+        "S":
+        {
+            "item": "tm:lead"
+        }
+    },
+
+    "result":
+    {
+        "item": "tm:nuke_side_plates"
+    }
+}
