@@ -1,6 +1,6 @@
 {
 	"parent": "block/tinted_cross",
 	"textures": {
-		"cross": "tm:blocks/bush"
+		"cross": "tm:blocks/radio_mushroom"
 	}
 }
