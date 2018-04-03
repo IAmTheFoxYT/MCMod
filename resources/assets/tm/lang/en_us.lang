@@ -11,8 +11,13 @@ item.strawberry_seeds.name=Strawberry Seeds
 item.mold_iron.name=Iron Mold
 item.liquid_obsidian.name=Liquid Obsidian
 item.uranium.name=Uranium
+item.poisonous_mushroom.name=Poisonous Mushroom
+item.lead.name=Lead Ingot
+item.tungsten.name=Tungsten Ingot
+item.nuke_side_plates.name=Nuclear Bomb Side Plate
 
 entity.crawler.name=Crawler
+entity.panther.name=Panther
 
 item.shovel_obsidian.name=Obsidian Shovel
 item.pickaxe_obsidian.name=Obsidian Pickaxe
@@ -41,3 +46,8 @@ tile.obsidian_presser.name=Obsidian Presser
 tile.strawberry_plant.name=Strawberry Plant
 tile.bush.name=Bush
 tile.ore_uran.name=Uranium Ore
+tile.nuke.name=Nuclear Bomb
+tile.radioactive_stone.name=Radioactive Stone
+tile.radio_mushroom.name=Radioactive Mushroom
+tile.ore_lead.name=Lead Ore
+tile.ore_tungsten.name=Tungsten Ore
