@@ -1,5 +1,10 @@
 {
-	"variants": {
-		"normal": { "model": "tm:radioactive_stone" }
-	}
+    "variants": {
+        "normal": [
+            { "model": "tm:radioactive_stone" },
+            { "model": "tm:radioactive_stone_mirrored" },
+            { "model": "tm:radioactive_stone", "y": 180 },
+            { "model": "tm:radioactive_stone_mirrored", "y": 180 }
+        ]
+    }
 }
