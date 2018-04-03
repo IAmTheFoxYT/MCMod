@@ -14,6 +14,7 @@ import ville.mod.objects.items.ItemBase;
 import ville.mod.objects.items.food.ItemCustomFood;
 import ville.mod.objects.items.food.ItemCustomFoodCooked;
 import ville.mod.objects.items.food.ItemFoodStrawBerries;
+import ville.mod.objects.items.food.ItemPoisonousMushroom;
 import ville.mod.objects.items.food.ItemStrawBerrySeed;
 import ville.mod.objects.tools.ToolAxe;
 import ville.mod.objects.tools.ToolHoe;
@@ -38,6 +39,9 @@ public class ItemInit
 	public static final Item MOLD_IRON = new ItemBase("mold_iron");
 	public static final Item LIQUID_OBSIDIAN = new ItemBase("liquid_obsidian");
 	public static final Item URANIUM = new ItemBase("uranium");
+	public static final Item LEAD = new ItemBase("lead");
+	public static final Item TUNGSTEN = new ItemBase("tungsten");
+	public static final Item NUKE_SIDE_PLATES = new ItemBase("nuke_side_plates");
 	
 	
 	//Tools
@@ -67,5 +71,6 @@ public class ItemInit
 	public static final Item COOKED_BRAIN = new ItemCustomFoodCooked("cooked_brain", 9, true);
 	public static final Item STRAWBERRIES = new ItemFoodStrawBerries("strawberries", 8, false);
 	public static final Item STRAWBERRY_SEEDS = new ItemStrawBerrySeed("strawberry_seeds", 1, false);
+	public static final Item POISONOUS_MUSHROOM = new ItemPoisonousMushroom("poisonous_mushroom", 1, false);
 
 }

@@ -10,6 +10,9 @@ import ville.mod.objects.blocks.BlockBase;
 import ville.mod.objects.blocks.BlockBush;
 import ville.mod.objects.blocks.BlockGas;
 import ville.mod.objects.blocks.BlockNuke;
+import ville.mod.objects.blocks.BlockOreLead;
+import ville.mod.objects.blocks.BlockOreTungsten;
+import ville.mod.objects.blocks.BlockRadioMushroom;
 import ville.mod.objects.blocks.BlockRadioStone;
 import ville.mod.objects.blocks.BlockStrawberryPlant;
 import ville.mod.objects.blocks.BlockTeleporter;
@@ -30,12 +33,15 @@ public class BlockInit
 	
 	public static final Block STRAWBERRY_PLANT = new BlockStrawberryPlant("strawberry_plant");
 	public static final Block BUSH = new BlockBush("bush", Material.VINE);
+	public static final Block RADIO_MUSHROOM = new BlockRadioMushroom("radio_mushroom", Material.PLANTS);
 	
 	public static final Block ORE_URAN = new OreUran("ore_uran", Material.ROCK).setHardness(10F);
 	public static final Block NUKE = new BlockNuke("nuke", Material.TNT);
 	public static final Block RADIOACTIVE_GAS = new BlockGas("radioactive_gas", Material.CLAY);
 	public static final Block RADIOACTIVE_STONE = new BlockRadioStone("radioactive_stone", Material.ROCK);
 	public static final Block TELEPORTER = new BlockTeleporter("teleporter");
+	public static final Block ORE_LEAD = new BlockOreLead("ore_lead", Material.ROCK);
+	public static final Block ORE_TUNGSTEN = new BlockOreTungsten("ore_tungsten", Material.ROCK);
 	
 	
 }
