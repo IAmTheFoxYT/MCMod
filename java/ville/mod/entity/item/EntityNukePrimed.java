@@ -114,7 +114,29 @@ public class EntityNukePrimed extends Entity
 	private void explode()
     {
         float f = 100.0F;
+        // 22 Explosions
         this.world.createExplosion(this, this.posX, this.posY + (double)(this.height / 16.0F), this.posZ, f, true);
+        this.world.createExplosion(this, this.posX + 15, this.posY + (double)(this.height / 16.0F), this.posZ + 15, f, true);
+        this.world.createExplosion(this, this.posX - 15, this.posY + (double)(this.height / 16.0F), this.posZ - 15, f, true);
+        this.world.createExplosion(this, this.posX - 15, this.posY + (double)(this.height / 16.0F), this.posZ + 15, f, true);
+        this.world.createExplosion(this, this.posX + 15, this.posY + (double)(this.height / 16.0F), this.posZ - 15, f, true);
+        this.world.createExplosion(this, this.posX, this.posY + (double)(this.height / 16.0F), this.posZ - 15, f, true);
+        this.world.createExplosion(this, this.posX - 15, this.posY + (double)(this.height / 16.0F), this.posZ, f, true);
+        this.world.createExplosion(this, this.posX + 15, this.posY + (double)(this.height / 16.0F), this.posZ, f, true);
+        this.world.createExplosion(this, this.posX, this.posY + (double)(this.height / 16.0F), this.posZ + 15, f, true);
+        this.world.createExplosion(this, this.posX - 30, this.posY + (double)(this.height / 16.0F), this.posZ, f, true);
+        this.world.createExplosion(this, this.posX + 30, this.posY + (double)(this.height / 16.0F), this.posZ, f, true);
+        this.world.createExplosion(this, this.posX, this.posY + (double)(this.height / 16.0F), this.posZ - 30, f, true);
+        this.world.createExplosion(this, this.posX, this.posY + (double)(this.height / 16.0F), this.posZ + 30, f, true);
+        this.world.createExplosion(this, this.posX, this.posY + (double)(this.height / 32.0F), this.posZ, f, true);
+        this.world.createExplosion(this, this.posX + 14, this.posY + (double)(this.height / 28.0F), this.posZ + 14, f, true);
+        this.world.createExplosion(this, this.posX - 14, this.posY + (double)(this.height / 28.0F), this.posZ - 14, f, true);
+        this.world.createExplosion(this, this.posX - 14, this.posY + (double)(this.height / 28.0F), this.posZ + 14, f, true);
+        this.world.createExplosion(this, this.posX + 14, this.posY + (double)(this.height / 28.0F), this.posZ - 14, f, true);
+        this.world.createExplosion(this, this.posX, this.posY + (double)(this.height / 28.0F), this.posZ - 14, f, true);
+        this.world.createExplosion(this, this.posX - 14, this.posY + (double)(this.height / 28.0F), this.posZ, f, true);
+        this.world.createExplosion(this, this.posX + 14, this.posY + (double)(this.height / 28.0F), this.posZ, f, true);
+        this.world.createExplosion(this, this.posX, this.posY + (double)(this.height / 28.0F), this.posZ + 14, f, true);
     }
 
     /**

@@ -16,16 +16,13 @@ import ville.mod.util.Reference;
 
 public class RenderNukePrimed extends Render<EntityNukePrimed>
 {
-	public static final ResourceLocation TEXTURES = new ResourceLocation(Reference.MODID + ":idunno_what_to_put_here");
 	public RenderNukePrimed(RenderManager renderManagerIn)
     {
         super(renderManagerIn);
         this.shadowSize = 0.5F;
     }
 
-    /**
-     * Renders the desired {@code T} type Entity.
-     */
+    
     public void doRender(EntityNukePrimed entity, double x, double y, double z, float entityYaw, float partialTicks)
     {
         BlockRendererDispatcher blockrendererdispatcher = Minecraft.getMinecraft().getBlockRendererDispatcher();
@@ -82,7 +79,7 @@ public class RenderNukePrimed extends Render<EntityNukePrimed>
 	@Override
 	protected ResourceLocation getEntityTexture(EntityNukePrimed entity) 
 	{
-		return TEXTURES;
+		return TextureMap.LOCATION_BLOCKS_TEXTURE;
 	}
 
     
